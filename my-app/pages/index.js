@@ -158,8 +158,8 @@ export default function Home() {
       // We connect to the Contract using a Provider, so we will only
       // have read-only access to the Contract
       const whitelistContract = new Contract(
-        // WHITELIST_CONTRACT_ADDRESS,
-        // abi,
+        WHITELIST_CONTRACT_ADDRESS,
+        abi,
         provider
       );
       // call the numAddressesWhitelisted from the contract
