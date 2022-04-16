@@ -284,7 +284,10 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        Made with &#10084; by{" "}
+        <a href="https://twitter.com/ceonyema_" className={styles.footlink}>
+          Emmanuel
+        </a>
       </footer>
     </div>
   );
