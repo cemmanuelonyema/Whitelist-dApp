@@ -6,6 +6,8 @@ import { useEffect, useRef, useState } from "react";
 import { abi, WHITELIST_CONTRACT_ADDRESS } from "../constants";
 
 export default function Home() {
+  // walletConnected keep track of whether the user's wallet is connected or not
+  const [walletConnected, setWalletConnected] = useState(false);
   // joinedWhitelist keeps track of whether the current metamask address has joined the Whitelist or not
   const [joinedWhitelist, setJoinedWhitelist] = useState(false);
   // loading is set to true when we are waiting for a transaction to get mined
@@ -207,7 +209,11 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./crypto-devs.svg" alt="nft-image" />
+          <img
+            className={styles.image}
+            src="./crypto-devs.svg"
+            alt="nft-image"
+          />
         </div>
       </div>
 
