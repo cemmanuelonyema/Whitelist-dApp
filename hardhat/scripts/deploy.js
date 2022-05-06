@@ -7,7 +7,10 @@ async function main() {
 
   await deployedWhitelistContract.deployed();
 
-  console.log("Whitelist deployed to:", deployedWhitelistContract.address);
+  console.log(
+    "Whitelist deployed successfully to:",
+    deployedWhitelistContract.address
+  );
 }
 
 // We recommend this pattern to be able to use async/await everywhere
